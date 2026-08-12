@@ -49,7 +49,16 @@
 .cardLink {
   align-self: flex-start;
   margin-top: var(--space-3);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 0.5rem;
+  color: var(--color-teal);
+  border-color: var(--color-teal);
+}
+
+.cardLink:hover {
+  color: #0b6564;
+  border-color: #0b6564;
 }
 
 .cardListItem {

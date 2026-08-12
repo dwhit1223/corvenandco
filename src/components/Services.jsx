@@ -57,7 +57,7 @@ export default function Services() {
               </ul>
               {service.href && (
                 <a href={service.href} className={`link-arrow ${styles.cardLink}`}>
-                  Learn more <span aria-hidden="true">→</span>
+                  Explore monthly bookkeeping <span aria-hidden="true">→</span>
                 </a>
               )}
             </article>

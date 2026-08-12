@@ -19,6 +19,17 @@ export default function Footer() {
             © {CURRENT_YEAR} Corven &amp; Company LLC. All rights reserved.
           </p>
 
+          <nav aria-label="Services">
+            <ul className={styles.links}>
+              <li>
+                <a href="/monthly-bookkeeping/">Monthly Bookkeeping</a>
+              </li>
+              <li>
+                <a href="/#services">View All Services</a>
+              </li>
+            </ul>
+          </nav>
+
           {hasLinks && (
             <ul className={styles.links}>
               {PRIVACY_URL && (
