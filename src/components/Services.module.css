@@ -1,0 +1,85 @@
+.services {
+  background: var(--color-light);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding-top: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding-top: var(--space-4);
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeading {
+  font-size: 1.35rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.cardBody {
+  color: #2b2b2b;
+  margin-bottom: var(--space-3);
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.cardListItem {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: #3a4048;
+}
+
+.cardListItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--color-teal);
+  border-radius: 1px;
+}
+
+.scopeNote {
+  font-size: 0.9rem;
+  color: #5b6472;
+  max-width: 60ch;
+  border-left: 2px solid var(--color-border);
+  padding-left: var(--space-2);
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

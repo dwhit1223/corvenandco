@@ -1,0 +1,49 @@
+.howItWorks {
+  padding-top: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .howItWorks {
+    padding-top: var(--space-4);
+  }
+}
+
+.steps {
+  display: grid;
+  gap: var(--space-4);
+  counter-reset: step;
+}
+
+.step {
+  position: relative;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.stepNumber {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-teal);
+  margin-bottom: var(--space-1);
+  letter-spacing: 0.04em;
+}
+
+.stepHeading {
+  font-size: 1.3rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.stepBody {
+  color: #2b2b2b;
+  max-width: 46ch;
+}
+
+@media (min-width: 900px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+  }
+}

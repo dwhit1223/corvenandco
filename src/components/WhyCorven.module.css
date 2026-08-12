@@ -1,0 +1,59 @@
+.whyCorven {
+  background: var(--color-navy);
+  color: var(--color-white);
+}
+
+.whyCorven :global(.eyebrow) {
+  color: #7fd6d5;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.intro {
+  max-width: 32rem;
+}
+
+.intro :global(.section-heading) {
+  color: var(--color-white);
+}
+
+.body {
+  margin-top: var(--space-2);
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 46ch;
+}
+
+.points {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.point {
+  padding-top: var(--space-2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pointHeading {
+  font-size: 1.1rem;
+  color: var(--color-white);
+  margin-bottom: 0.3rem;
+}
+
+.pointBody {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .points {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

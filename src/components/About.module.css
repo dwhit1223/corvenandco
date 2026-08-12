@@ -1,0 +1,32 @@
+.about {
+  background: var(--color-light);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.wrapper {
+  max-width: 1000px;
+}
+
+.heading {
+  max-width: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 890px;
+}
+
+.paragraph {
+  color: #2b2b2b;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-5);
+  }
+}
