@@ -12,12 +12,20 @@ export const SITE_DESCRIPTION =
 export const CONTACT_EMAIL = "hello@corvenandco.com";
 export const CONTACT_EMAIL_SUBJECT = "Bookkeeping inquiry — Corven & Company";
 
-// Single source of truth for every contact CTA's mailto: destination.
-// Built with encodeURIComponent rather than a hand-escaped literal so the
-// subject line is always correctly percent-encoded.
-export const CONTACT_MAILTO_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-  CONTACT_EMAIL_SUBJECT
-)}`;
+// Single source of truth for every contact CTA's mailto: destination. Built
+// with encodeURIComponent rather than a hand-escaped literal so the subject
+// line is always correctly percent-encoded. Every contact CTA should go
+// through this function (or the default export below) rather than
+// hand-building its own mailto string, so the email address and encoding
+// logic live in exactly one place.
+export function buildContactMailto(subject = CONTACT_EMAIL_SUBJECT) {
+  return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}`;
+}
+
+// Default mailto: URL used by most contact CTAs across the site. Pass a
+// page-specific subject to buildContactMailto() only when it's genuinely
+// useful (e.g. a dedicated service page).
+export const CONTACT_MAILTO_URL = buildContactMailto();
 
 // No scheduling URL or contact form endpoint has been supplied yet.
 // When one exists, set it here and update the Contact CTA to use it.

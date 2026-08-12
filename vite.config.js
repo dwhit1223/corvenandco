@@ -12,6 +12,9 @@ export default defineConfig({
         monthlyBookkeeping: fileURLToPath(
           new URL('./monthly-bookkeeping/index.html', import.meta.url)
         ),
+        bookkeepingCleanup: fileURLToPath(
+          new URL('./bookkeeping-cleanup/index.html', import.meta.url)
+        ),
       },
     },
   },

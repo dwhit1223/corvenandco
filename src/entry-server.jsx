@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { renderToString } from "react-dom/server";
 import App from "./App.jsx";
 import MonthlyBookkeepingPage from "./pages/monthly-bookkeeping/MonthlyBookkeepingPage.jsx";
+import BookkeepingCleanupPage from "./pages/bookkeeping-cleanup/BookkeepingCleanupPage.jsx";
 
 export function renderHome() {
   return renderToString(
@@ -15,6 +16,14 @@ export function renderMonthlyBookkeeping() {
   return renderToString(
     <StrictMode>
       <MonthlyBookkeepingPage />
+    </StrictMode>
+  );
+}
+
+export function renderBookkeepingCleanup() {
+  return renderToString(
+    <StrictMode>
+      <BookkeepingCleanupPage />
     </StrictMode>
   );
 }

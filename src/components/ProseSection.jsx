@@ -1,8 +1,7 @@
 import styles from "./ProseSection.module.css";
 
-// Shared layout for the page's simple eyebrow/heading/paragraph sections
-// (introductory process, starting-books, and pricing) — identical shape,
-// different copy, so one component renders all three.
+// Shared layout for simple eyebrow/heading/paragraph sections used across
+// service pages — identical shape, different copy.
 export default function ProseSection({ eyebrow, heading, paragraphs, altBg }) {
   return (
     <section className={`section ${styles.section} ${altBg ? styles.altBg : ""}`}>

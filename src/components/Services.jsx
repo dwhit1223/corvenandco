@@ -4,6 +4,7 @@ const SERVICES = [
   {
     heading: "Monthly bookkeeping",
     href: "/monthly-bookkeeping/",
+    linkLabel: "Explore monthly bookkeeping",
     body: "Ongoing transaction review, account reconciliation, month-end close, and monthly financial statements tailored to the needs of your business.",
     bullets: [
       "Transaction categorization and review",
@@ -14,6 +15,8 @@ const SERVICES = [
   },
   {
     heading: "Catch-up and cleanup",
+    href: "/bookkeeping-cleanup/",
+    linkLabel: "Explore catch-up and cleanup",
     body: "Bring overdue, incomplete, or unreliable books up to date and establish a clean foundation for ongoing bookkeeping.",
     bullets: [
       "Historical account reconciliation",
@@ -57,7 +60,7 @@ export default function Services() {
               </ul>
               {service.href && (
                 <a href={service.href} className={`link-arrow ${styles.cardLink}`}>
-                  Explore monthly bookkeeping <span aria-hidden="true">→</span>
+                  {service.linkLabel} <span aria-hidden="true">→</span>
                 </a>
               )}
             </article>

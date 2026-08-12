@@ -25,6 +25,9 @@ export default function Footer() {
                 <a href="/monthly-bookkeeping/">Monthly Bookkeeping</a>
               </li>
               <li>
+                <a href="/bookkeeping-cleanup/">Catch-up &amp; Cleanup</a>
+              </li>
+              <li>
                 <a href="/#services">View All Services</a>
               </li>
             </ul>

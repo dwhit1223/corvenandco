@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ssrEntryPath = path.resolve(root, "dist-ssr/entry-server.js");
 
-const { renderHome, renderMonthlyBookkeeping } = await import(
+const { renderHome, renderMonthlyBookkeeping, renderBookkeepingCleanup } = await import(
   `file://${ssrEntryPath.replace(/\\/g, "/")}`
 );
 
@@ -23,6 +23,11 @@ const pages = [
     htmlPath: path.resolve(root, "dist/monthly-bookkeeping/index.html"),
     render: renderMonthlyBookkeeping,
     expectedMarker: "Reliable monthly bookkeeping",
+  },
+  {
+    htmlPath: path.resolve(root, "dist/bookkeeping-cleanup/index.html"),
+    render: renderBookkeepingCleanup,
+    expectedMarker: "Bring your QuickBooks records back under control",
   },
 ];
 

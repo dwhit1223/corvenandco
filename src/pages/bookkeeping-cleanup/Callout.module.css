@@ -1,0 +1,29 @@
+.wrap {
+  padding: var(--space-4) 0;
+}
+
+.callout {
+  max-width: 42rem;
+  background: var(--color-light);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-teal);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+}
+
+.heading {
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.body {
+  font-size: 0.92rem;
+  color: #3a4048;
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    padding: var(--space-3) 0;
+  }
+}

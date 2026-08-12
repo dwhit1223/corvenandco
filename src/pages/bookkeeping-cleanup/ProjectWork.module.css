@@ -1,0 +1,44 @@
+.projectWork {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.intro {
+  max-width: 60ch;
+  color: #2b2b2b;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.card {
+  background: var(--color-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.cardHeading {
+  font-size: 1.15rem;
+  color: var(--color-navy);
+  margin-bottom: var(--space-2);
+}
+
+.cardBody {
+  color: #2b2b2b;
+  font-size: 0.95rem;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
