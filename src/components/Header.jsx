@@ -4,10 +4,10 @@ import { CONTACT_MAILTO_URL } from "../config/site";
 import styles from "./Header.module.css";
 
 const NAV_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "How it works", href: "/#how-it-works" },
+  { label: "About", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.bar}`}>
-        <a href="#top" className={styles.wordmark}>
+        <a href="/" className={styles.wordmark}>
           <img
             src={logo}
             alt="Corven & Company"

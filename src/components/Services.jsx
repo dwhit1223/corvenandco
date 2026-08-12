@@ -3,6 +3,7 @@ import styles from "./Services.module.css";
 const SERVICES = [
   {
     heading: "Monthly bookkeeping",
+    href: "/monthly-bookkeeping/",
     body: "Ongoing transaction review, account reconciliation, month-end close, and monthly financial statements tailored to the needs of your business.",
     bullets: [
       "Transaction categorization and review",
@@ -54,6 +55,11 @@ export default function Services() {
                   </li>
                 ))}
               </ul>
+              {service.href && (
+                <a href={service.href} className={`link-arrow ${styles.cardLink}`}>
+                  Learn more <span aria-hidden="true">→</span>
+                </a>
+              )}
             </article>
           ))}
         </div>
