@@ -42,5 +42,8 @@ export const CURRENT_YEAR = new Date().getFullYear();
 // analytics snippet (measurement ID) into index.html. Do not fabricate an
 // ID or add a tracking script without an approved, real value here.
 export const GOOGLE_SITE_VERIFICATION = null; // Google Search Console HTML-tag content value
-export const BING_SITE_VERIFICATION = null; // Bing Webmaster Tools content value
 export const ANALYTICS_MEASUREMENT_ID = null; // e.g. GA4 "G-XXXXXXX", only once analytics is approved
+
+// Bing verification is handled via the static public/BingSiteAuth.xml file
+// (Bing's XML-file verification method), not a meta tag, so there's no
+// corresponding constant here.
