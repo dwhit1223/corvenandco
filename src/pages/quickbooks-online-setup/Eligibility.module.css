@@ -1,0 +1,85 @@
+.eligibility {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.intro {
+  max-width: 40rem;
+}
+
+.body {
+  margin-top: var(--space-2);
+  color: #2b2b2b;
+  max-width: 56ch;
+}
+
+.fitList {
+  background: var(--color-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.fitListHeading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: var(--space-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #2b2b2b;
+}
+
+.listItem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--color-teal);
+  border-radius: 1px;
+}
+
+.note {
+  color: #2b2b2b;
+  max-width: 70ch;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.inlineLink {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+.inlineLink:hover {
+  color: var(--color-teal);
+  text-decoration-color: var(--color-teal);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: start;
+  }
+}

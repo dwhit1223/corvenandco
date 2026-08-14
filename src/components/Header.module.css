@@ -50,6 +50,60 @@
   color: var(--color-teal);
 }
 
+.servicesItem {
+  position: relative;
+}
+
+.servicesButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.chevron {
+  width: 8px;
+  height: 8px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+
+.servicesButton[aria-expanded="true"] .chevron {
+  transform: translateY(1px) rotate(225deg);
+}
+
+.servicesMenu {
+  position: absolute;
+  top: calc(100% + 0.75rem);
+  left: 0;
+  min-width: 230px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-1);
+  z-index: 60;
+}
+
+.servicesMenuLink {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-navy);
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.servicesMenuLink:hover {
+  background: var(--color-light);
+  color: var(--color-teal);
+}
+
 .headerCta {
   display: none;
 }
@@ -99,6 +153,20 @@
   text-decoration: none;
   color: var(--color-navy);
   border-bottom: 1px solid var(--color-border);
+}
+
+.mobileGroupLabel {
+  padding-top: var(--space-2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+
+.mobileServiceLink {
+  padding-left: var(--space-2);
+  font-size: 0.98rem;
 }
 
 .mobileCta {

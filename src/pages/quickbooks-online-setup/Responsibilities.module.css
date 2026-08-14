@@ -1,0 +1,50 @@
+.responsibilities {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  background: var(--color-light);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.body {
+  margin-top: var(--space-2);
+  color: #2b2b2b;
+  max-width: 60ch;
+}
+
+.list {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: var(--space-4);
+  max-width: 60ch;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  color: #2b2b2b;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem 0.65rem 1.6rem;
+}
+
+.listItem::before {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--color-teal);
+  border-radius: 1px;
+}
+
+.note {
+  color: #2b2b2b;
+  max-width: 65ch;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}

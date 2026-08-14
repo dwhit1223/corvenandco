@@ -15,6 +15,9 @@ export default defineConfig({
         bookkeepingCleanup: fileURLToPath(
           new URL('./bookkeeping-cleanup/index.html', import.meta.url)
         ),
+        quickbooksOnlineSetup: fileURLToPath(
+          new URL('./quickbooks-online-setup/index.html', import.meta.url)
+        ),
       },
     },
   },

@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className={styles.heading}>Clear books. Better business decisions.</h1>
           <p className={styles.body}>
             Corven &amp; Company provides dependable bookkeeping and QuickBooks Online
-            support for small businesses that need accurate books and a clearer
+            setup for small businesses that need accurate books and a clearer
             view of where the business stands.
           </p>
           <div className={styles.actions}>
@@ -23,7 +23,7 @@ export default function Hero() {
           </div>
           <p className={styles.supporting}>
             Monthly bookkeeping <span aria-hidden="true">•</span> Catch-up and cleanup{" "}
-            <span aria-hidden="true">•</span> QuickBooks Online support
+            <span aria-hidden="true">•</span> QuickBooks Online setup
           </p>
         </div>
 

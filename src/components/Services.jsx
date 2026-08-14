@@ -26,13 +26,15 @@ const SERVICES = [
     ],
   },
   {
-    heading: "QuickBooks Online support",
-    body: "Set up and organize QuickBooks Online around the way your business actually operates, with practical help when the workflow needs attention.",
+    heading: "QuickBooks Online Setup",
+    href: "/quickbooks-online-setup/",
+    linkLabel: "Explore QuickBooks Online setup",
+    body: "A practical QuickBooks Online foundation for qualifying new businesses, including account structure, connected financial accounts, basic settings, and an organized starting workflow.",
     bullets: [
       "New-company file setup",
       "Chart-of-accounts organization",
       "Bank-feed and workflow setup",
-      "Process guidance and troubleshooting",
+      "Initial reconciliation guidance",
     ],
   },
 ];

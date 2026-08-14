@@ -28,6 +28,9 @@ export default function Footer() {
                 <a href="/bookkeeping-cleanup/">Catch-up &amp; Cleanup</a>
               </li>
               <li>
+                <a href="/quickbooks-online-setup/">QuickBooks Online Setup</a>
+              </li>
+              <li>
                 <a href="/#services">View All Services</a>
               </li>
             </ul>

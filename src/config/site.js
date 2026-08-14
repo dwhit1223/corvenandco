@@ -5,9 +5,9 @@
 
 export const SITE_URL = "https://corvenandco.com/";
 export const SITE_NAME = "Corven & Company";
-export const SITE_TITLE = "Small Business Bookkeeping & QuickBooks Support | Corven & Company";
+export const SITE_TITLE = "Small Business Bookkeeping Services | Corven & Company";
 export const SITE_DESCRIPTION =
-  "Corven & Company provides monthly bookkeeping, catch-up and cleanup services, and QuickBooks Online support for small businesses.";
+  "Corven & Company provides monthly bookkeeping, catch-up and cleanup services, and QuickBooks Online setup for small businesses.";
 
 export const CONTACT_EMAIL = "hello@corvenandco.com";
 export const CONTACT_EMAIL_SUBJECT = "Bookkeeping inquiry — Corven & Company";
